@@ -1,0 +1,29 @@
+.ticker-container {
+    position: absolute;
+    overflow: hidden;
+    white-space: nowrap;
+    display: flex;
+    background: linear-gradient(to right, rgb(255, 165, 0), rgb(138, 43, 226), rgb(255, 182, 193));
+    width: 100%;
+    padding: 10px;
+   
+  }
+  .ticker-item {
+    margin: 40px;
+    font-weight: bold !important;
+  }
+  .ticker-scroll {
+    animation: scroll 20s linear infinite;
+    display: inline-block;
+    white-space: nowrap;
+  }
+  
+  @keyframes scroll {
+    0% {
+      transform: translateX(50%);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+  
